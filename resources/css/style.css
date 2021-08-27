@@ -1,0 +1,373 @@
+/* ======================================
+
+Template Name: Merkury_Landing Page
+Template URI: G:\New Tutorial\WD\UY Lab\Files\02-Standard PSD\04-Veer
+Author: Dedarul Hasan
+Author URI: https://www.facebook.com/WhiteDevil2k/
+Version: 1.0
+Description: An awesome personal blog template.
+Support: mddedarulhasan@gmail.com
+Color: #31d7ce
+
+========================================*/
+
+/* ======================================
+
+CSS INDEX
+---------
+1.  Google Fonts
+2.  Common Css
+3.  Reusable
+4.  Menubar Css
+5.  Banner Css
+6.  About Css
+7.  Services Css
+8.  Work Css
+9.  Counting Css
+10. Blog Css
+11. JOIN_US Css
+12. Footer Css
+
+========================================*/
+
+
+/*==================================== 
+            1. Google Font Css
+====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/*==================================== 
+            2. Common Css
+====================================*/
+html,body{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+ul,ol{
+    list-style-type: none;
+}
+a, a:hover{
+    text-decoration: none;
+}
+
+/*==================================== 
+            3. Reusable Css Start
+====================================*/
+.common_section_header h1{
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #252525;
+    padding-bottom: 5rem;
+}
+/*==================================== 
+            4. Menubar Css Start
+====================================*/
+
+.menubar{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo{
+    padding: 1.5rem 0;
+}
+.menu ul{
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+}
+.menu ul li{
+    padding: 1.5rem 2rem;
+}
+.menu ul li a{
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #0e1424;
+}
+.menu ul li a:hover{
+    color: #31d7ce;
+}
+
+
+/*==================================== 
+            5. Banner Css Start
+====================================*/
+#banner{
+    background: linear-gradient(#00000096, #0000009c), url(../../resources/css/img/banner.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    text-transform: uppercase;
+}
+.banner_content{
+    padding: 30.2rem 0;
+}
+.banner_hader h1{
+    color: #31d7ce;
+    letter-spacing: 1rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 6rem;
+}
+.custom_btn{
+    background-color: transparent;
+    border: 2px solid #31d7ce;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    color: #31d7ce;
+    margin-top: 2rem;
+}
+.custom_btn:hover{
+    color: #fff;
+}
+
+/*==================================== 
+            6. About Css Start
+====================================*/
+#about{
+    padding: 15rem 0;
+}
+.about_content{
+    padding: 3rem 3rem 0 3rem;
+}
+.about_content h2{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #252525;
+}
+.about_content p{
+    padding: 1rem 13rem 1rem 0;
+    font-family: 'Open Sans';
+    font-size: 1.3rem;
+    color: #2f2f2f;
+}
+.read_more{
+    background-color: #0dac88;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 2rem;
+    border: 1px solid #0dac88;
+}
+
+/*==================================== 
+            7. Services Css Start
+====================================*/
+
+.service_content{
+    padding: 5.4rem 5rem 5rem 4.5rem;
+    margin-bottom: 15rem;
+}
+.service_icon{
+    height: 7rem;
+    width: 7rem;
+    line-height: 7rem;
+    text-align: center;
+    background-color: #0dac88;
+    border-radius: 1rem;
+    margin-right: 3rem;
+}
+.service_text h4{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.service_text p{
+    font-size: 1.4rem;
+}
+.service_content:hover{
+    box-shadow: .1rem .1rem 1rem #0dac88;
+    border-radius: 1rem;
+}
+
+/*==================================== 
+            8. Work Css Start
+====================================*/
+
+#work{
+    margin-bottom: 8rem;
+}
+.img_gly{
+    position: relative;
+    margin-bottom: 3rem;
+}
+.img_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 1s;
+}
+.img_overlay span{
+    font-size: 1.4rem;
+    font-family: 'Poppins';
+    color: #fff;
+    opacity: 0;
+    letter-spacing: .5rem;
+}
+.img_overlay:hover{
+    background-color: rgba(0, 0, 0, 0.616);
+    transition: all linear 1s;
+}
+.img_overlay:hover span{
+    opacity: 1;
+}
+
+/*==================================== 
+            9. Counting Css Start
+====================================*/
+#counting{
+    background: url(../../resources/css/img/count.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 14rem;
+}
+.counting_content{
+    padding: 3rem 0;
+    color: #fff;
+    text-align: center;
+}
+.counting_icon{
+    padding-bottom: 1rem;
+}
+.counting_content h2{
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+.counting_content span{
+    font-size: 1.3rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+
+/*==================================== 
+            10. Blog Css Start
+====================================*/
+#blog{
+    margin-bottom: 10rem;
+}
+.blog_contents{}
+
+.blog_header h4{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding-top: 2.6rem;
+    padding-bottom: .5rem;
+}
+.blog_contents p{
+    font-size: 1.3rem;
+    padding-right: 17rem;
+}
+.blog_contents a{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+
+/*==================================== 
+            11. JOIN_US Css Start
+====================================*/
+#join{
+    background-color: #50d18d;
+}
+.join_us{
+    padding: 7rem 0;
+    justify-content: center;
+    position: relative;
+}
+.join_us h2{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #fff;
+}
+.join_us button {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #4be694;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 65px;
+    left: 62%;
+    border-radius: 3rem;
+    border: 1px solid #4be694;
+}
+.join_us button:hover{
+    background-color: #4be694;
+    border: 1px solid #4be694;
+    color: #fff;
+}
+
+
+/*==================================== 
+            12. Footer Css Start
+====================================*/
+footer{
+    background-color: #000415;
+    padding-top: 10rem;
+}
+
+#footer{
+    position: relative;
+}
+.footer_content::after {
+    position: absolute;
+    content: '';
+    top: 6rem;
+    left: 50%;
+    height: 18rem;
+    width: .1rem;
+    background-color: #393939;
+}
+.footer_content{
+    padding-left: 25rem;
+}
+.footer_content h2{
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.footer_icon{
+    padding-top: .5rem;
+    padding-left: 9rem;
+    margin-bottom: 4rem;
+}
+.footer_add p{
+    font-family: 'Open Sans';
+    font-size: 1.4rem;
+    color: #fff;
+    padding-left: 2rem;
+}
+.f_aa{
+    margin-top: 2rem;
+}
+
+.copyright{
+    padding-bottom: 2rem;
+    margin-top: 7rem;
+    text-align: center;
+    color: #818181;
+    font-size: 1.5rem;
+}
